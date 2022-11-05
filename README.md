@@ -4,9 +4,15 @@ Boilerplate for manually setting up a NodeJS project that uses TypeScript.
 TypeScript code is run directly without waiting for it to be compiled using `ts-node` and changes are watched by `nodemon`.
 
 ## Run project for local development
-Starts ts-node which allows us to to run TypeScript directly without having to compile it. This process icalled cold Reloading.
+We have 2 options. Hot realoding while executing TypeScript directly is supported in both cases:
+
+1. `ts-node` runs TypeScript directly while nodemon watches for changes
 
 `npm run start:dev`
+
+2. `ts-node-dev` runs TypeScript directly.
+
+`npm run start:ts-dev`
 
 ## Build for production
 Clean the destination build folder `build` and emit new code.
